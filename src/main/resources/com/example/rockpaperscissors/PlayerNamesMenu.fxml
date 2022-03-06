@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rockpaperscissors.PlayerNameMenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="274.0" layoutY="79.0" text="Enter your name to begin!">
+         <font>
+            <Font name="SF Pro Rounded Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="player1TextField" layoutX="429.0" layoutY="475.0" prefHeight="24.0" prefWidth="185.0" style="-fx-background-radius: 35;" />
+      <Label layoutX="429.0" layoutY="440.0" text="Your name:">
+         <font>
+            <Font name="SF Pro Rounded Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btStartGame" layoutX="475.0" layoutY="518.0" mnemonicParsing="false" onAction="#startGame" style="-fx-background-color: BLACK; -fx-background-radius: 35;" text="START!" textFill="WHITE">
+         <font>
+            <Font name="SF Pro Rounded Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

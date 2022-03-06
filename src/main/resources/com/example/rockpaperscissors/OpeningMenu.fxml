@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rockpaperscissors.OpeningMenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="87.0" layoutY="74.0" text="Welcome to the Rock, Paper, Scissors Game!">
+         <font>
+            <Font name="SF Pro Rounded Bold" size="40.0" />
+         </font>
+      </Label>
+      <HBox layoutX="338.0" layoutY="449.0" prefHeight="60.0" prefWidth="318.0" spacing="100.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#switchToPlayersMenu" prefHeight="56.0" prefWidth="127.0" style="-fx-background-color: BLACK; -fx-background-radius: 35;" text="Start" textFill="WHITE">
+               <font>
+                  <Font name="SF Pro Rounded Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#exitGame" style="-fx-background-color: BLACK; -fx-background-radius: 35;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="SF Pro Rounded Bold" size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
